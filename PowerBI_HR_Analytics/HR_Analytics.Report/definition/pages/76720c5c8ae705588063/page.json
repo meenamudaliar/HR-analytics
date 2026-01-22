@@ -1,0 +1,48 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "76720c5c8ae705588063",
+  "displayName": "Department",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "08a1e14fce54e9bcd40d",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "HR"
+              }
+            },
+            "Property": "Department"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      }
+    ]
+  },
+  "pageBinding": {
+    "name": "b1a55c7c498c63c1173d",
+    "type": "Drillthrough",
+    "parameters": [
+      {
+        "name": "aeaa13e032bd565f6d8f",
+        "boundFilter": "08a1e14fce54e9bcd40d",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "HR"
+              }
+            },
+            "Property": "Department"
+          }
+        }
+      }
+    ]
+  },
+  "type": "Drillthrough"
+}

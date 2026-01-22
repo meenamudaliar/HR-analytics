@@ -1,0 +1,12 @@
+relationship AutoDetected_7242d23a-ce92-480e-97ce-f576b55c8fb9
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: HR.EmployeeNumber
+	toColumn: HR_1.EmployeeNumber
+
+relationship AutoDetected_f0acd978-2eda-47c1-9555-308c8c04f462
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: HR.'Employee ID'
+	toColumn: HR_2.'Employee ID'
+

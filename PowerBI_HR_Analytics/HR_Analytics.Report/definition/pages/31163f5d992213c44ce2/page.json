@@ -1,0 +1,48 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "31163f5d992213c44ce2",
+  "displayName": "Jobrole",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "ce9f1ba66a31c3b76b8e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "HR"
+              }
+            },
+            "Property": "JobRole"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      }
+    ]
+  },
+  "pageBinding": {
+    "name": "96342aee6d4584ed19da",
+    "type": "Drillthrough",
+    "parameters": [
+      {
+        "name": "49832dc41db85575d7c0",
+        "boundFilter": "ce9f1ba66a31c3b76b8e",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "HR"
+              }
+            },
+            "Property": "JobRole"
+          }
+        }
+      }
+    ]
+  },
+  "type": "Drillthrough"
+}
